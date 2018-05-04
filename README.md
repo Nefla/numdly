@@ -1,8 +1,8 @@
-# nuwordly
+# numdly
 
 Converts numbers into words.
 
-## Install
+## Installation
 
 ```bash
 npm install numdly
