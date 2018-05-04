@@ -1,5 +1,8 @@
 # numdly
 
+[![][TravisLogo]][Travis]
+[![][mit-badge]][mit]
+
 Converts numbers into words.
 
 ## Installation
