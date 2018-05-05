@@ -1,5 +1,5 @@
 const test = require('tape')
-const api = require('../src/main')
+const api = require('../')
 
 test('match with valid ones', t => {
   t.equal('zero', api(0))

@@ -1,5 +1,5 @@
 const test = require('tape')
-const api = require('../src/main')
+const api = require('../')
 
 test('match invalid inputs', t => {
   const error = t.throws(() => {

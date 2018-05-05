@@ -1,5 +1,5 @@
 const test = require('tape')
-const api = require('../src/main')
+const api = require('../')
 
 test('match with valid units (bigger than hundreds)', t => {
   t.equal('one thousand, seventeen', api(1017))
