@@ -4,9 +4,12 @@ html
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title numdly - Converts numbers into words.
-    // build:css main.all.css
+    // build:css main.min.css
     link(rel="stylesheet" href="main.css")
     // endbuild
   body
     block content
-    script(src="bundle.js")
+
+    // build:js bundle.min.js
+    script(src="bundle.js" charset="utf-8")
+    // endbuild

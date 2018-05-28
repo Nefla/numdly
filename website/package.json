@@ -13,18 +13,31 @@
     "watch": "npm run watch:html | npm run watch:js | npm run watch:css",
     "watch:css": "node-sass styles/*.sass -w -o dist/ --souce-map-embed",
     "watch:html": "pug views/*.pug -P -w -o dist/",
-    "watch:js": "watchify scripts/main.js -o dist/bundle.js -t [ babelify --presets [ babel-preset-env ] ]"
+    "watch:js": "watchify scripts/main.js -o dist/bundle.js -t [ babelify --presets [ babel-preset-env ] ]",
+    "clean": "rimraf dist/*",
+    "usemin": "usemin dist/index.html -d dist -o dist/index.html --rmlr true --noprocess",
+    "minify": "npm run minify:js | npm run minify:css",
+    "minify:js": "minify dist/bundle.js -o dist/bundle.min.js",
+    "minify:css": "cleancss dist/main.css -o dist/main.min.css",
+    "production": "npm run clean && npm run build && npm run minify && npm run usemin",
+    "deploy": "npm run production && npm run push",
+    "push": "gh-pages -d dist -s '{index.html,bundle.min.js,main.min.css}'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-minify": "^0.4.3",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^16.2.0",
+    "clean-css-cli": "^4.1.11",
+    "gh-pages": "^1.1.0",
     "node-sass": "^4.9.0",
     "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.5.1",
     "watchify": "^3.11.0"
   },
   "browserlist": [
