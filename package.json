@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "Converts numbers into words.",
   "main": "index.js",
+  "homepage": "https://nefla.github.io/numdly",
   "scripts": {
     "test": "tape test/**/*.js | tap-spec",
     "test:watch": "tape-watch test/**/*.js -p tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nefla/numdly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nefla/numdly/issues"
   },
   "keywords": [],
   "author": "nefla",
