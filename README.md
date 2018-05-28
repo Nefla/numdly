@@ -1,7 +1,8 @@
 # numdly
 
-[![Build Status](https://travis-ci.org/Nefla/numdly.svg?branch=master)](https://travis-ci.org/Nefla/numdly)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?longCache=true)](https://raw.githubusercontent.com/Nefla/numdly/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/numdly.svg)](https://www.npmjs.com/package/numdly)
+[![Build Status](https://travis-ci.org/nefla/numdly.svg?branch=master)](https://travis-ci.org/nefla/numdly)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?longCache=true)](https://raw.githubusercontent.com/nefla/numdly/master/LICENSE)
 
 Converts numbers into words.
 
