@@ -1,0 +1,37 @@
+{
+  "name": "numdly-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "build": "npm run build:html | npm run build:css | npm run build:js",
+    "build:html": "pug views/*.pug -P -o dist/",
+    "build:css": "node-sass styles/*.sass -o dist/ --souce-map-embed",
+    "build:js": "browserify scripts/main.js -o dist/bundle.js -t [ babelify --presets [ babel-preset-env ] ]",
+    "watch": "npm run watch:html | npm run watch:js | npm run watch:css",
+    "watch:css": "node-sass styles/*.sass -w -o dist/ --souce-map-embed",
+    "watch:html": "pug views/*.pug -P -w -o dist/",
+    "watch:js": "watchify scripts/main.js -o dist/bundle.js -t [ babelify --presets [ babel-preset-env ] ]"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.0",
+    "node-sass": "^4.9.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "watchify": "^3.11.0"
+  },
+  "browserlist": [
+    "> 2%"
+  ],
+  "dependencies": {
+    "imask": "^3.3.0",
+    "numdly": "^1.0.0"
+  }
+}

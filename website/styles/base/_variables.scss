@@ -1,0 +1,28 @@
+// Breakpoints
+$xs-small-bp: 576;
+$small-bp: 768;
+$medium-bp: 992;
+$large-bp: 1200;
+
+//Colors
+$black: hsl(0, 0%, 10%);
+$black-light: hsl(0, 0%, 12%);
+$gray: hsl(0, 0%, 70%);
+$white: hsl(0, 0%, 100%);
+
+$major: 245;
+$major-color: hsl($major, 49%, 45%);
+$major-color-dark: hsl($major, 49%, 30%);
+
+// Snippet colors
+$snp-key-color: hsl(9, 75%, 50%);
+$snp-func-color: hsl(330, 75%, 50%);
+$snp-arg-color: hsl(210, 75%, 50%);
+$snp-str-color: hsl(240, 75%, 59%);
+$snp-comm-color: hsl(0, 0%, 40%);
+
+// Sizes
+$h1-size: 2;
+$h2-size: 1.8;
+$h3-size: 1.4;
+$p-size: 1.2;

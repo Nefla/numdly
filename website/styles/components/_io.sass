@@ -1,0 +1,33 @@
+.button
+  background-color: $major-color-dark
+  font-size: 1em
+  padding: 1em 6em
+  color: $white
+  transition: background-color 0.2s ease-out
+
+  &:hover
+    background-color: $white
+    color: $major-color
+    text-decoration: none
+
+.input
+  border: none
+  width: 100%
+  margin-bottom: 2em
+  border-bottom: 1px solid $black
+  padding: 0.5rem 0
+  font-size: 1.2rem
+
+  @media(min-width: #{$xs-small-bp}px)
+    width: 50%
+
+.output
+  width: 100%
+  border-width: 1px
+  border-style: solid
+  padding: 1rem
+  min-height: 200px
+  font-size: 1.5rem
+
+.input, .output
+  border-color: $gray

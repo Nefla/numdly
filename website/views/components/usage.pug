@@ -1,0 +1,26 @@
+section.section#usage
+  .container
+    h2 Usage
+    p.text If your number is smaller than 2^53, you can pass the
+      |  number directly:
+
+    .snippet.mb-10
+      p
+        | #[span.snp-key import] numdly
+        | #[span.snp-key from] #[span.snp-str 'numdly']
+        br
+        | #[span.snp-key let] numberText =
+        | #[span.snp-func numbly](#[span.snp-arg 314])
+        br
+        | #[span.snp-func console].#[span.snp-arg log](numberText)
+        | #[span.snp-comm // three hundred forteen]
+
+    p.text For bigger numbers, however, use a string:
+
+    .snippet
+      p
+        | #[span.snp-key import] numdly
+        | #[span.snp-key from] #[span.snp-str 'numdly']
+        br
+        | #[span.snp-key let] numberText =
+        | #[span.snp-func numdly](#[span.snp-str '3141592653589793238'])
